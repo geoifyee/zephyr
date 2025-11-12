@@ -1,38 +1,40 @@
-# zephyr
-Zephyr — a modern, Swift-based programming language designed for effortless readability, limitless flexibility, and uncompromising performance.
+## 💨 Zephyr Programming Language: An Overview and Guide
 
-## 💨 Zephyr Programming Language: Overview and Installation Guide
-
-Zephyr is a **modern, Swift-based programming language** designed to be **simple, flexible, and approachable** for developers of all skill levels. It combines Swift’s performance and safety with an extremely easy-to-learn syntax.
+**Zephyr** is a modern, Swift-based programming language designed for **effortless readability, limitless flexibility, and uncompromising performance**. It combines Swift's performance, type safety, and modern syntax with an extremely easy-to-learn structure, making it accessible to developers at all skill levels.
 
 -----
 
 ## 🎯 Overview
 
-Zephyr focuses on three core goals:
+Zephyr is built on three **Core Principles**:
 
-1.  **Ease of learning** — Simple syntax and readable structure.
-2.  **Flexibility** — Adaptable for scripting, tools, and general-purpose programming.
-3.  **Performance** — Built on **Swift** for native execution speed.
+  * **Ease of learning** — Simple, predictable, and human-readable syntax.
+  * **Flexibility** — Adaptable for scripting, tools, and general-purpose applications.
+  * **Performance** — Powered by Swift for native execution speed.
 
-Zephyr programs use the **`.zpr`** extension and are executed directly through the **Zephyr command-line interface (CLI)**.
+Zephyr programs use the **`.zpr`** extension and are executed through the Zephyr command-line interface (`zephyr`).
+
+### Version and Resources
+
+  * **Version:** Zephyr 1.1 Beta
+  * **Source Code:** Latest source and documentation are available at: `https://github.com/geoifyee/zephyr`
 
 -----
 
 ## ✨ Features
 
-  * **Simple, human-readable syntax**
+  * Clear, **minimal syntax**
   * **Cross-platform** (Windows, macOS, Linux)
-  * **Swift-based interpreter and runtime**
-  * **Standard library** with common utilities
-  * **Native CLI** for running `.zpr` files
-  * **Open source** under the **AGPL-3.0 license**
+  * **Swift-based** interpreter and runtime
+  * Comprehensive standard library
+  * Native **CLI** for running `.zpr` files
+  * Distributed under the **AGPL-3.0 open-source license**
 
 -----
 
 ## ⚙️ Installation
 
-The installation process involves three main steps across all platforms: **Install Swift**, **Clone Zephyr**, and **Run the Installer**.
+The installation process consists of three steps on all platforms: 1) Install Swift, 2) Clone Zephyr, and 3) Run the appropriate installer script.
 
 ### Windows
 
@@ -87,3 +89,52 @@ The installation process involves three main steps across all platforms: **Insta
     ```bash
     sh OS_Installers/install_linux.sh
     ```
+
+-----
+
+## ▶️ Running Zephyr Code
+
+To run a Zephyr program, you execute the `zephyr` CLI with the path to your `.zpr` file.
+
+1.  **Create a file named `hello.zpr`:**
+    ```zpr
+    print("Hello, world")
+    print("This is your first Zephyr program.")
+    ```
+2.  **Run it:**
+    ```bash
+    ./zephyr examples/hello.zpr
+    ```
+    > **Note:** The Zephyr Code Run command can only run its own files (`.zpr`).
+
+-----
+
+## 📂 Project Structure
+
+The core components of the Zephyr project include:
+
+```css
+Zephyr/
+ ├── Sources/Zephyr/
+ │   ├── main.swift (Entry point)
+ │   ├── tokenizer.swift
+ │   ├── parser.swift
+ │   ├── runtime.swift
+ │   ├── stdlib.swift (Standard library implementation)
+ │   └── interpreter.swift
+ ├── OS_Installers/ (Installation scripts for different operating systems)
+ │   ├── install_linux.sh
+ │   ├── install_macos.sh
+ │   ├── install_windows.ps1
+ │   └── smart_installer.swift
+ ├── examples/
+ │   └── hello.zpr
+ ├── zephyr (The compiled executable)
+ └── Package.swift (Swift package manifest)
+```
+
+-----
+
+## ⚖️ License
+
+Zephyr is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. You are free to use, modify, and distribute the software, provided that all derivative works remain open-source and accessible.
