@@ -1,0 +1,12 @@
+// swift-tools-version: 6.0
+import PackageDescription
+
+let package = Package(
+    name: "Zephyr",
+    targets: [
+        .executableTarget(
+            name: "Zephyr",
+            path: "Sources/Zephyr"
+        )
+    ]
+)

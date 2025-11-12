@@ -1,0 +1,10 @@
+say welcome to Zephyr 1.1 Beta
+say --------------------------
+let name be Geo
+say Hello name
+say This is your first Zephyr program!
+repeat 3 times
+    say Loop number number
+end
+wait 1
+say Done.
