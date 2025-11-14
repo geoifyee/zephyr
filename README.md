@@ -109,10 +109,6 @@ To run a Zephyr program, you execute the `zephyr` CLI with the path to your `.zp
 
 -----
 
-## 📂 Project Structure
-
-The core components of the Zephyr project include:
-
 ```css
 
 -----
