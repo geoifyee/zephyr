@@ -114,24 +114,6 @@ To run a Zephyr program, you execute the `zephyr` CLI with the path to your `.zp
 The core components of the Zephyr project include:
 
 ```css
-Zephyr/
- ├── Sources/Zephyr/
- │   ├── main.swift (Entry point)
- │   ├── tokenizer.swift
- │   ├── parser.swift
- │   ├── runtime.swift
- │   ├── stdlib.swift (Standard library implementation)
- │   └── interpreter.swift
- ├── OS_Installers/ (Installation scripts for different operating systems)
- │   ├── install_linux.sh
- │   ├── install_macos.sh
- │   ├── install_windows.ps1
- │   └── smart_installer.swift
- ├── examples/
- │   └── hello.zpr
- ├── zephyr (The compiled executable)
- └── Package.swift (Swift package manifest)
-```
 
 -----
 
